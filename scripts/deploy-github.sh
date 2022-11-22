@@ -8,7 +8,7 @@ npm run build
 cd example/public
 
 # 添加自定义域名
-echo 'xiaoqi.live' > CNAME
+# echo 'xiaoqi.live' > CNAME
 
 # commit 代码
 git init
@@ -17,7 +17,7 @@ date=`date +%Y-%m-%d_%H:%M:%S`
 git commit -m "deploy ${date}"
 
 # 发布到 github
-git push -f git@github.com:qianxiaoqi/qianxiaoqi.github.io.git master:gh-pages
+git push -f git@github.com:qianxiaoqi/qianxiaoqi.github.io.git main:gh-pages
 
 # 删除打包后的文件夹
 cd ../../
