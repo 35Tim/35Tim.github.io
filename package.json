@@ -8,8 +8,8 @@
     "packages/@vuepress-reco/*"
   ],
   "scripts": {
-    "dev": "vuepress dev example",
-    "build": "vuepress build example",
+    "dev": "vuepress dev pages",
+    "build": "vuepress build pages",
     "commit": "git add . && git-cz",
     "deploy:gitee": "bash scripts/deploy-gitee.sh",
     "deploy:github": "bash scripts/deploy-github.sh",

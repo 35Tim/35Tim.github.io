@@ -5,7 +5,7 @@ set -e
 npm run build
 
 # 进入生成的文件夹
-cd example/public
+cd pages/public
 
 # 添加自定义域名
 # echo 'xiaoqi.live' > CNAME
@@ -21,4 +21,4 @@ git push -f git@gitee.com:bug7/bug7.git master:gh-pages
 
 # 删除打包后的文件夹
 cd ../../
-rm -rf example/public
+rm -rf pages/public
