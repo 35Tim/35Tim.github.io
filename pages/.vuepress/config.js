@@ -1,5 +1,5 @@
 module.exports = {
-  title: '小七のblog',
+  title: "Tim's Blog",
   description: '想法 + 实践 = Bug',
   dest: 'pages/public',
   head: [
@@ -36,8 +36,8 @@ module.exports = {
         text: 'Tag', // 默认 “标签”
       },
     },
-    logo: '/head.png',
-    authorAvatar: '/head.png',
+    logo: '/head.jepg',
+    authorAvatar: '/head.jepg',
     // 搜索设置
     search: true,
     searchMaxSuggestions: 10,
@@ -47,7 +47,7 @@ module.exports = {
     // 最后更新时间
     lastUpdated: 'Last Updated',
     // 作者
-    author: '小七',
+    author: 'Tim',
     // 备案号
     record: '苏ICP备19064892号',
     // 备案链接到官网
