@@ -1,56 +1,10 @@
 {
-  "name": "tim-blog",
-  "private": true,
-  "license": "MIT",
-  "main": "index.js",
-  "workspaces": [
-    "packages/vuepress-theme-reco",
-    "packages/@vuepress-reco/*"
-  ],
   "scripts": {
-    "dev": "vuepress dev pages",
-    "build": "vuepress build pages",
-    "commit": "git add . && git-cz",
-    "deploy:gitee": "bash scripts/deploy-gitee.sh",
-    "deploy:github": "bash scripts/deploy-github.sh",
-    "eslint-ext": "eslint --ext .js,.vue ./",
-    "eslint-fix": "eslint --fix --ext .js,.vue ./",
-    "prepublish": "lerna publish --dist-tag next",
-    "publish": "lerna publish",
-    "push": "yarn commit && git push",
-    "update": "yarn upgrade-interactive --latest"
-  },
-  "lint-staged": {
-    "*.{js,ts,vue}": [
-      "eslint --fix --ext .js,.vue ./",
-      "git add"
-    ],
-    "package.json": [
-      "sort-package-json",
-      "git add"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-customizable"
-    }
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
-    "babel-eslint": "^10.1.0",
-    "commitizen": "^4.1.2",
-    "conventional-changelog-cli": "^2.0.34",
-    "cz-customizable": "^6.2.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-vue": "^6.2.2",
-    "husky": "^4.2.5",
-    "lerna": "^3.22.0",
-    "lint-staged": "^10.2.7",
-    "sort-package-json": "^1.44.0",
-    "vuepress": "^1.5.0"
-  },
-  "publishConfig": {
-    "access": "public"
+    "vitepress": "1.0.0-rc.44"
   }
 }
