@@ -21,7 +21,7 @@ module.exports = {
       {
         text: 'Github',
         icon: 'reco-github',
-        link: 'https://github.com/qianxiaoqi',
+        link: 'https://github.com/35Tim',
       },
     ],
     type: 'blog',
@@ -81,4 +81,4 @@ module.exports = {
      * 'twilight'
      */
   },
-}
+};

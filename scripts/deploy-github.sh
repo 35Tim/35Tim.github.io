@@ -17,7 +17,7 @@ date=`date +%Y-%m-%d_%H:%M:%S`
 git commit -m "deploy ${date}"
 
 # 发布到 github
-git push -f git@github.com:qianxiaoqi/qianxiaoqi.github.io.git main:gh-pages
+git push -f git@github.com:Tim35/Tim35.github.io.git main:gh-pages
 
 # 删除打包后的文件夹
 cd ../../
